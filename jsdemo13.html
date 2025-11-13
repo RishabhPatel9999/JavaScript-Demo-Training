@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .clsA{
+            background-color: navy;
+            color: whitesmoke;
+        }
+        .clsB{
+            text-align: center;
+            line-height: 100px;
+            border: 100px;
+        }
+    </style>
+    <script>
+        function btnClick(){
+            let lst=document.getElementsByClassName('clsA');
+            console.log(lst);
+
+            let lst=document.querySelector('h1');
+            let lst=document.querySelectorAll('h1');
+            let lst=document.querySelector('#myH4');
+            let lst=document.querySelectorAll('clsA');
+            let lst=document.querySelector('h1-nth');
+            
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h1 class="clsA">Heading 1</h1>
+    <h1>Heading 1</h1>
+    <h1>Heading 1</h1>
+    <h1>Heading 1</h1>
+    <h1>Heading 1</h1>
+    <p class="clsA">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id incidunt veritatis magni molestiae et quis at?  Assumenda cumque aliquid reiciendis vero, commodi, maiores voluptatibus recusandae minus, delectus beatae ex.</p>
+    <button onclick="clsA"></button>
+</body>
+</html>
