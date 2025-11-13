@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .clsA{
+            background-color: navy;
+            color: whitesmoke;
+        }
+        .clsB{
+            text-align: center;
+            line-height: 100px;
+            border: 100px;
+        }
+    </style>
+    <script>
+        function btnClick(){
+            let myH1=document.createElement('h1');
+            myH1.textContent='Js Demo Page';
+            myH1.style.backgroundColor='yellow';
+            myH1.style.color='navy';
+            myH1.style.textAlign='center';
+            myH1.style.padding='20px';
+
+            // document.body.append(myH1);
+            document.body.prepend(myH1);
+
+
+            console.log(myH1);
+
+        }
+    </script>
+</head>
+<body>
+    <button onclick="btncClick()">
+        Botton
+    </button>
+</body>
+</html>
