@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btnClaick(){
+
+            let ele=document.getElementById('myH');
+            console.log(ele);
+            console.log(ele.textContent);
+            ele.textContent="Hello World...";
+            ele.style.backgroundColor='#bebebe';
+            ele.style.color='navy';
+            ele.style.border='2px solid red';
+            ele.style.textAlign='center';
+            ele.style.lineHeight='80px';
+        }
+
+    </script>
+</head>
+<body>
+    <h1 id="myH">JSs DOM Demo 1</h1>
+      <button onclick="btnClaick()">
+        button 
+    </button>
+</body>
+</html>
