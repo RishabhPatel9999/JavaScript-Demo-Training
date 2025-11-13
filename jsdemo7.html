@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let arr=[100, 200,300,400,500,600];
+
+        // function myCallback(ele){
+        //     console.log(ele);
+        // }
+        // arr.forEach(myCallback);
+
+        // arr.forEach(function(ele){
+        //     console.log(ele);
+        // })
+
+        // arr.forEach(ele=>{
+        //     console.log(ele);
+        // })
+
+        // arr.forEach((ele)=>{
+        //     console.log(ele);
+        // })
+
+        // arr=["Apple","Mongo","Banana","Guava","Pineapple"];
+
+        // arr.forEach((ele,idx)=>{
+        //     console.log(`${idx+1} ${ele}`);
+        // })
+
+        // let trans=[
+        //     {type:"deposit",amount:1000},
+        //     {type:"withdraw",amount:200},
+        //     {type:"deposit",amount:500},
+        //     {type:"withdraw",amount:300},
+        // ]
+
+        // let balance=0; 
+
+        // trans.forEach((t)=>{
+        //    if(t.type==='deposit'){
+        //        balance+= t.amount;
+        //        console.log(`Deposited amount ${t.amount}.Balance ${balance}`);
+        //    }
+        //    else if(t.type==='withdraw'){
+        //        balance-=t.amount;
+        //        console.log(`Withdrawl amount ${t.amount}.Balance ${balance}`);
+        //    }
+        // })
+
+
+        // let arr1=[100,200,300,400,500,600];
+
+        // let arr2=["Apple","Mongo","Banana","Guava","Pineapple"];
+
+        // let arr3=[...arr1,...arr2];
+        // console.log(arr3);
+
+        // let arr=[100,200,300]
+
+        // let [a,b,c]=arr;
+
+        // console.log(a,b,c);
+        
+        // let converion_Doller_Rupee=89;
+        // let products=[
+        //     {proName:'Smart Watch',priceDoller:499},
+        //     {proName:'Earpod',priceDoller:399},
+        //     {proName:'Lenovo Laptop',priceDoller:80000},
+        //     {proName:'Smart Phone',priceDoller:60000},
+        // ]
+        // products.forEach((product)=>{
+        //     console.log(`product: ${product.proName},Price in INR: ${product.priceDoller*converion_Doller_Rupee}`);
+        // })
+        
+        // let arr=[1,2,3,4,5];  
+        // function myCallback(ele){
+        //     if(ele%2==0)
+        //     return true
+        // }
+        // let r=arr.filter(myCallback);
+        // console.log(r);
+
+        // let r=arr.filter((ele)=>{
+        //     if(ele%2==0)
+        //     return true
+        // }) 
+
+        // let cities=[
+        //     {cityName:'Kanpur', Population:50000},
+        //     {cityName:'Delhi', Population:8000},
+        //     {cityName:'Uttar ', Population:9000},
+        //     {cityName:'Mumbai', Population:7000},
+        // ]
+
+        // let r=cities.filter((city)=>{
+        //     if(city.Population>=60000)
+        //     return true
+        // })
+        // console.log(r);
+
+
+        // let arr=[1,2,3,4,5,6,7,8,9,10]
+
+        // let r=arr.map((ele)=>{
+        //     return ele**2
+        // })
+        // console.log(r);
+
+        // let temp_c=[-10,-7,0,10,15,22]
+
+        // let arr=[8,1,2,7,4,3,6,0]
+        // arr.sort((a,b)=>{
+        //    console.log(a,b);
+
+        //     return a-b;
+        // });
+        // console.log(arr);
+
+        // arr=["Rahul","Sachin","Zaheer","Yuraj","Amit"]
+        // arr.sort();
+        // console.log(arr);
+
+        // let products=[
+        //     {proName:'Smart Watch',priceDoller:499},
+        //     {proName:'Earpod',priceDoller:399},
+        //     {proName:'Lenovo Laptop',priceDoller:80000},
+        //     {proName:'Smart Phone',priceDoller:60000},
+        // ]
+
+        // products.sort((a,b)=>{
+        //     return a.priceDoller-b.priceDoller
+        // })
+        // console.log(products);
+
+        let userData=[
+            {uid:1004, unm:'Sachin', age:55},
+            {uid:1003, unm:'Zaheer', age:45},
+            {uid:1002, unm:'Rahul', age:48},
+            {uid:1005, unm:'Kaif', age:43},
+        ]
+        r=userData.sort((a,b)=>{
+            return a.uid-b.uid;
+        })
+        console.log(r);
+
+        r=userData.sort((a,b)=>{
+            // return a.unm-b.unm
+            return a.unm.localeCompare.unm;
+        })
+        console.log(r);
+
+        r=[...userData].sort((a,b)=>{
+            return a.age-b.age;
+        })
+        console.log(r);
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html> 
