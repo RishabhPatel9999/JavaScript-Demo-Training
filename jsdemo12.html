@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btnClink(){
+            let raios=document.getElementsByName('gender');
+            console.log(radios);
+            radios.forEach((radio)=>{
+                if(radio.checked)
+                console.log(radio.value);
+            })
+        }
+        function select(){
+            let chicklist=document.getElementsByName('hobbies');
+            checklist.forEach((checkBox)=>{
+                // if(checkBox.checked)
+                //    console.log(checkBox.value);
+            
+            })
+        }
+    </script>
+</head>
+<body>
+    <input type="radio" name="gender" value="Male"/>Male
+    <input type="radio" name="gender" value="Female">Female
+    <input type="submit" name="subBtn" value="btnclick()"/>
+
+</hr>
+
+    <input type="checkbox" name="hobbies" value="Swin"/>
+    <input type="checkbox" name="hobbies" value="Read"/>
+    <input type="checkbox" name="hobbies" value="Play"/>
+    <input type="checkbox" name="hobbies" value="Sleep"/>
+</body>
+</html>
