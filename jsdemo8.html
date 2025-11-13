@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let arr=[1,2,3,4,5];
+
+        // let sum=0;
+        // for(let ele of arr){
+        //     sum+=ele;
+        // }
+        // console.log(sum);
+
+        // let s=arr.reduce((sum,ele)=>sum+ele,0)
+        // console.log(s);
+
+        // let userCart=[
+        //     {pid:1001,pName:'Mobile',price:29000},
+        //     {pid:1002,pName:'Laptop',price:80000},
+        //     {pid:1003,pName:'Watch',price:900},
+        //     {pid:1004,pName:'Ipad',price:89000},
+        //     {pid:1005,pName:'Shoes',price:2000},
+            
+        // ]
+
+        // let finalPrice=userCart.reduce((cartTotal,ele)=>cartTotal+ele.price,0);
+        // console.log(finalPrice);
+
+        // let data={
+        //     uid:1001,
+        //     unm:"Sachin",
+        //     email:"sachin@gmail.com",
+        //     gender:"Male"
+        // }
+
+        // console.log(data.uid);
+        // console.log(data.unm);
+        // console.log(data.email);
+        // console.log(data.gender);
+
+
+
+
+        // let data={
+        //     uid:1001,
+        //     unm:"Sachin",
+        //     email:"sachin@gmail.com",
+        //     gender:"Male",
+        //     fun1:function(){
+        //         console.log("fun 1Calling....");
+        //         console.log(this); // Current Object
+        //     },
+        //     fun2:()=>{
+        //         console.log("Function 2...");
+        //         console.log(this); // Window
+        //     }
+        // }
+        // data.fun1()
+        // data.fun2()
+
+
+
+        let converion_D_to_INR=89;
+        let products=[
+            {proName:'Smart Watch',priceDoller:499},
+            {proName:'Earpod',priceDoller:399},
+            {proName:'Lenovo Laptop',priceDoller:4000},
+            {proName:'Smart Phone',priceDoller:600},
+        ]
+
+        products.forEach((product)=>{
+            product["priceINR"]=product.priceDoller*converion_D_to_INR
+        })
+        console.log(products);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
